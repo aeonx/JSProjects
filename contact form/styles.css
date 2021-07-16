@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-darkgray: rgba(194, 194, 194, 0.8);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: var(--color-darkblue-alpha)
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    width: 100%;
+    background-color: var(--color-darkblue);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px var(--color-white);
+}
+
+.wrapper h2{
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: var(--color-white);
+}
+
+.wrapper .input_field, .form-control, .btn{
+    margin-bottom: 4px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper .form-control,
+.wrapper textarea{
+    width: 100%;
+    padding: 2px
+}
+
+.wrapper textarea{
+    height: 75px;
+    resize: none;
+}
+
+.wrapper .btn input[type="submit"]{
+    border: 0;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background: var(--color-darkgray);
+    color: var(--color-white);
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.wrapper #error_message{
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+}
